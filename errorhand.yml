@@ -6,6 +6,7 @@
       apt: 
        name: gittttt
        state: present 
+      ignore_errors: yes
     
     - name: i want to install wget 
       apt: 
