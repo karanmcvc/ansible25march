@@ -1,0 +1,15 @@
+--- 
+- hosts: all 
+  become: yes 
+  tasks: 
+    - name: install multi package 
+      apt: 
+        name: "{{ itam }}" 
+        state: present 
+      loop: 
+         - git 
+         - wget 
+         - tree
+      
+      
+      
