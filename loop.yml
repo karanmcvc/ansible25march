@@ -4,7 +4,7 @@
   tasks: 
    - name: install multi package 
      apt: 
-      name: "{{ itam }}" 
+      name: "{{ item }}" 
       state: present 
      loop: 
         - git 
